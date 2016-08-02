@@ -7,10 +7,15 @@ footer {
 	padding: 50px 0;
 }
 
+.episode {
+	margin: 10px 0;
+}
+
 .episode .media-body p {
 	font-family: 'PT Serif', serif;
-	font-size: 15px;
-	line-height: 25px;
+	font-size: 14px;
+	line-height: 19px;
+	margin-bottom:0;
 }
 
 .jumbotron {

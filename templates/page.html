@@ -18,16 +18,16 @@
     </div>
 
 	<div class="container">
-		{% if error %}
-			<div class="alert alert-danger text-center">
-				Sorry, there was an error. Please try again by reloading the page.
-			</div>
-		{% else %}
+		{% if episodes %}
 			{% for episode in episodes %}
 				{% if loop.index%2 == 1 %}<div class="row">{%endif %}
 					{{ include('episode.html') }}
 				{% if loop.index%2 == 0 %}</div>{%endif %}
 			{% endfor %}
+		{% else %}
+			<div class="alert alert-danger text-center">
+				Sorry, there was an error. Please try again by reloading the page.
+			</div>
 		{% endif %}
 	</div>
 
